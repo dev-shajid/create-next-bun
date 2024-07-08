@@ -3,10 +3,10 @@
 # Create Next Template
 
 ```bash
-npx create-next-shajid myapp
+npx create-next-bun myapp
 ```
 
-<img src="https://raw.githubusercontent.com/dev-shajid/create-next-shajid/main/public/readme_banner.png" alt="thubnail">
+<img src="https://raw.githubusercontent.com/dev-shajid/create-next-bun/main/public/readme_banner.png" alt="thubnail">
 </a>
 <p align="center">
   <a href="#-features"><strong>Features</strong></a> ·
@@ -21,15 +21,7 @@ npx create-next-shajid myapp
 - 📘 Typescript
 - 🎨 TailwindCSS - Class sorting, merging and linting
 - 🛠️ Shadcn/ui - Customizable UI components
-<!-- - 💵 Stripe - Payment handler -->
-<!-- - 🔒 Next-auth - Easy authentication library for Next.js (GitHub provider) -->
-<!-- - 🛡️ Prisma - ORM for node.js -->
-<!-- - 📋 React-hook-form - Manage your forms easy and efficient  -->
-<!-- - 🔍 Zod - Schema validation library -->
-<!-- - 🧪 Jest & React Testing Library - Configured for unit testing -->
-<!-- - 🎭 Playwright - Configured for e2e testing -->
 - 📈 Absolute Import & Path Alias - Import components using `@/` prefix
-<!-- - 💅 Prettier - Code formatter -->
 - 🧹 Eslint - Code linting tool
 - 🐶 Husky & Lint Staged - Run scripts on your staged files before they are committed
 - 🔹 Icons - From Lucide and React-Icons
@@ -37,13 +29,12 @@ npx create-next-shajid myapp
 - 🗺️ Sitemap & robots.txt - With next-sitemap
 - 📝 Commitlint - Lint your git commits
 - 🤖 Github actions - Lint your code on PR
-<!-- - ⚙️ T3-env - Manage your environment variables -->
 - 💯 Perfect Lighthouse score
 
 ## 🚀 Deployment
 Easily deploy your Next.js app with <a href="https://vercel.com/">Vercel</a> by clicking the button below:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dev-shajid/create-next-shajid)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dev-shajid/create-next-bun)
 
 ## 📁 Project structure
 
@@ -53,11 +44,13 @@ Easily deploy your Next.js app with <a href="https://vercel.com/">Vercel</a> by 
 ├── public                          # Public assets folder
 └── src
     ├── app                         # Next JS App (App Router)
+          ├── (public)              # (Public Router)
+          └── (protected)           # (Protected Router)
     ├── components                  # React components
     ├── hooks                       # Custom hooks
     ├── lib                         # Functions and utilities
     ├── styles                      # Styles folder
-    ├── types                       # Type definitions
+    └── types                       # Type definitions
 ```
 
 
