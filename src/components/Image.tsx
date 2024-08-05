@@ -15,12 +15,12 @@ export function Image({
   return (
     <div
       className={cn(
-        "[> div]:relative relative flex aspect-auto w-full items-center justify-center overflow-hidden",
+        "[> div]:relative relative flex aspect-auto w-full items-center justify-center overflow-hidden rounded-md",
         className,
       )}
     >
       <NextImage
-        className="!relative w-full object-fill"
+        className="!relative w-full object-fit"
         src={src}
         alt={alt}
         fill

@@ -19,14 +19,14 @@ export interface AppConfig {
 
 export const appConfig: AppConfig = {
   logo: undefined,
-  name: "NXT",
+  name: "DEV.",
 }
 
 export const apiPrefix: string = "/api"
 
-export const REDIRECT_AUTHENTICATED: string = "/dashboard"
+export const REDIRECT_AUTHENTICATED: string = "/admin"
 
-export const REDIRECT_NOT_AUTHENTICATED: string = "/"
+export const REDIRECT_NOT_AUTHENTICATED: string = "/login"
 
 export const publicRoutes:RouteTypes = {
   contact: {
@@ -44,17 +44,22 @@ export const publicRoutes:RouteTypes = {
 export const protectedRoutes: RouteTypes = {
   dashboard: {
     name: 'Dashboard',
-    href: "/dashboard",
+    href: "/admin",
     icon: HomeIcon,
+  },
+  project: {
+    name: 'Project',
+    href: "/admin/project",
+    icon: KeyRound,
   },
   profile: {
     name: 'Profile',
-    href: "/profile",
+    href: "/admin/profile",
     icon: KeyRound,
   },
   setting: {
     name: 'Setting',
-    href: "/setting",
+    href: "/admin/setting",
     icon: Settings,
   },
 }

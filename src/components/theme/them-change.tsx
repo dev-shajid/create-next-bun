@@ -12,7 +12,7 @@ export default function ThemeToggle() {
   return (
     <>
       <Button
-        className="!ring-0 select-none" variant="outline" size="icon"
+        className="!ring-0 select-none" variant='ghost' size="icon"
         onClick={() => setTheme(theme == 'light' ? 'dark' : 'light')}
       >
         {

@@ -1,9 +1,19 @@
-import { Title1 } from "@/components/Title";
 
-export default function Home() {
+import About from '@/components/home/About'
+import Banner from '@/components/home/Banner'
+import Projects from '@/components/home/Projects'
+import Skills from '@/components/home/Skills'
+
+export default async function Home() {
+
   return (
-    <>
-      <Title1 className="text-center mt-12">Home Page</Title1>
-    </>
-  );
+    <main className='min-h-screen w-full'>
+      <div className='container mx-auto px-4 mb-8'>
+        <Banner />
+        <About />
+        <Projects />
+        <Skills />
+      </div>
+    </main>
+  )
 }

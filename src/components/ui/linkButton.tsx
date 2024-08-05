@@ -37,13 +37,14 @@ const buttonVariants = cva(
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
   asChild?: boolean
   href: string
+  target?: string
 }
 
 const LinkButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ href, className, variant, size, asChild = false, ...props }, ref) => {
+  ({ href, target, className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
     return (
-      <Link href={href}>
+      <Link href={href} target={target}>
         <Comp
           className={cn(buttonVariants({ variant, size, className }))}
           ref={ref}
